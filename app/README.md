@@ -11,7 +11,9 @@ interface UserCandidato{
     postulacion (alcalde, presidente, etc...),
     idCampaña,
     votantes team[],
-    partido
+    partido,
+    email,
+    phone,
 } 
 
 2. uno de sus seguidores se registra para buscar posibles votantes.
@@ -21,7 +23,9 @@ iterface UserSeguidor{
     name,
     idCampaña,
     team: votantes[] 'personas que lo siguen'
-    partido.
+    partido,
+    email,
+    phone,
 }
 
 3. se registran todos los posibles votantes (los votantes solo pueden estar en un grupo)
@@ -33,7 +37,9 @@ interface Votante{
     direccion,
     edad,
     seguidor.
-    partido.
+    partido,
+    email,
+    phone,
 }
 
 ## Administracion
